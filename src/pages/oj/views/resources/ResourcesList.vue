@@ -1,4 +1,5 @@
 <template>
+
   <el-row>
   <el-col :span="6" v-for="(o, index) in 3" :key="o" :offset="index > 0 ? 2 : 0">
     <el-card :body-style="{ padding: '0px' }">
@@ -12,6 +13,7 @@
     </el-card>
   </el-col>
 </el-row>
+
 </template>
 
 <script>

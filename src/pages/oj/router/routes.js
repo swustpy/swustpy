@@ -18,13 +18,6 @@ import {
   ResourcesList
 } from '../views'
 import Resouece from '../views/resources/Resource.vue'
-import Announce from '../views/resources/resource-details/Announce.vue'
-import Content from '../views/resources/resource-details/Content.vue'
-import Testlist from '../views/resources/resource-details/Testlist.vue'
-import Examlist from '../views/resources/resource-details/Examlist.vue'
-import Forumindex from '../views/resources/resource-details/Forumindex.vue'
-import Contentlist from '../views/resources/resource-details/Contentlist.vue'
-import Forumindexdetails from '../views/resources/resource-details/Forumindexdetails.vue'
 
 import * as Contest from '@oj/views/contest'
 import * as Setting from '@oj/views/setting'
@@ -196,44 +189,8 @@ export default [
   },
   {
     name: 'resources-details',
-    path: '/resources/:resourceID',
-    component: Resouece,
-    children: [
-      {
-        name: 'announce',
-        path: '/resources/:resourcesID/announce',
-        component: Announce
-      },
-      {
-        name: 'content',
-        path: '/resources/:resourceID/content',
-        component: Content
-      },
-      {
-        name: 'testlist',
-        path: '/resources/:resourceID/testlist',
-        component: Testlist
-      },
-      {
-        name: 'examlist',
-        path: '/resources/:resourceID/examlist',
-        component: Examlist
-      },
-      {
-        name: 'forumindex',
-        path: '/resources/:resourceID/forumindex',
-        component: Forumindex
-      }
-    ]
-  },
-  {
-    name: 'resources-details-ID',
-    path: 'resources/:resourceID/content/:contentID',
-    component: Contentlist
-  },
-  {
-    name: 'resources-detail',
-    path: 'resources/:resourceID/forumindex/:forumindexID',
-    component: Forumindexdetails
+    path: 'resources/resourcesID',
+    component: Resouece
   }
+
 ]

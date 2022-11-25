@@ -173,7 +173,7 @@
       </el-form>
     </Panel>
     <!--对话框-->
-    <el-dialog :title="$t('m.User_Info')" :visible.sync="showUserDialog" :close-on-click-modal="false">
+    <!-- <el-dialog :title="$t('m.User_Info')" :visible.sync="showUserDialog" :close-on-click-modal="false">
       <el-form :model="user" label-width="120px" label-position="left">
         <el-row :gutter="20">
           <el-col :span="12">
@@ -246,7 +246,7 @@
         <cancel @click.native="showUserDialog = false">Cancel</cancel>
         <save @click.native="saveUser()"></save>
       </span>
-    </el-dialog>
+    </el-dialog> -->
   </div>
 </template>
 
@@ -272,7 +272,7 @@
         // 搜索关键字
         keyword: '',
         // 是否显示用户对话框
-        showUserDialog: false,
+        // showUserDialog: false,
         // 当前用户model
         user: {},
         loadingTable: false,
